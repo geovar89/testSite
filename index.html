@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose Version</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #f4f4f9, #e8ecf3);
+      margin: 0;
+    }
+    .container {
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+    h1 {
+      margin-bottom: 24px;
+      color: #222;
+      font-size: 26px;
+      font-weight: 600;
+    }
+    .cta-btn {
+      display: inline-block;
+      padding: 14px 28px;
+      margin: 10px 8px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .cta-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    }
+    .btn-v1 {
+      background: #007bff;
+    }
+    .btn-v1:hover {
+      background: #0056b3;
+    }
+    .btn-v2 {
+      background: #28a745;
+    }
+    .btn-v2:hover {
+      background: #1e7e34;
+    }
+    /* Responsive for mobile */
+    @media (max-width: 600px) {
+      .cta-btn {
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+      }
+    }
+    /* Fade-in + slide animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Select a Version</h1>
+    <a href="version1/index.html" class="cta-btn btn-v1">Go to Version 1</a>
+    <a href="version2/index.html" class="cta-btn btn-v2">Go to Version 2</a>
+  </div>
+</body>
+</html>
